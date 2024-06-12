@@ -2,6 +2,6 @@ syntax = "proto3";
 
 package whirl;
 
-message FingerReqCmd {
+message FingerRequestCmd {
   string user = 1;
 }
