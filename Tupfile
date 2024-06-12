@@ -1,3 +1,4 @@
 BUILD_DIRECTORY = build
 
 : foreach ./*.proto |> protoc --python_out=$(BUILD_DIRECTORY) --proto_path=. -I. %f |> $(BUILD_DIRECTORY)/%B_pb2.py
+: foreach ./commands/*.proto |> protoc --python_out=$(BUILD_DIRECTORY) --proto_path=. -I. %f |> $(BUILD_DIRECTORY)/commands/%B_pb2.py

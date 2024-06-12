@@ -1,5 +1,5 @@
 import network_packet_pb2 as network_packet
-import buddy_list_notify_command_pb2 as buddy_list_notify_command
+from commands import buddy_list_notify_command_pb2 as buddy_list_notify_command
 
 request = network_packet.NetworkPacket()
 
