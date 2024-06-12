@@ -4,6 +4,6 @@ package whirl;
 
 import "OldPropertyList.proto";
 
-message SessionInitCmd {
+message SessionInitCommand {
   OldPropertyList property_list = 1;
 }

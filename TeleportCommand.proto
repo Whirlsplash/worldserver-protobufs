@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message TeleportCmd {
+message TeleportCommand {
   int32 room_id = 1;
   int32 exit_type = 2;
   int32 entry_type = 3;

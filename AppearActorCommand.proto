@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message AppearActorCmd {
+message AppearActorCommand {
   int32 room_id = 1;
   int32 x = 2;
   int32 y = 3;

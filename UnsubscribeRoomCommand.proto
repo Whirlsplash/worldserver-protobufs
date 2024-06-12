@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package whirl;
 
-message SubscribeDistanceCmd {
+message UnsubscribeRoomCommand {
   int32 room_number = 1;
-  int32 distance = 2;
 }

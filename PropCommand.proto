@@ -4,6 +4,6 @@ package whirl;
 
 import "OldPropertyList.proto";
 
-message SessionExitCmd {
+message PropCommand {
   OldPropertyList property_list = 1;
 }

@@ -4,7 +4,7 @@ package whirl;
 
 import "ObjID.proto";
 
-message WhisperCmd {
+message WhisperCommand {
   ObjID sender_id = 1;
   string text = 2;
   ObjID receiver_id = 3;

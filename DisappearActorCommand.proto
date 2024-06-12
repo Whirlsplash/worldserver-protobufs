@@ -2,4 +2,4 @@ syntax = "proto3";
 
 package whirl;
 
-message DisappearActorCmd {};
+message DisappearActorCommand {};

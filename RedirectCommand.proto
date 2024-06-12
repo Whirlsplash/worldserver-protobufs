@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message RedirectCmd {
+message RedirectCommand {
   int32 room_number = 1;
   int32 ip_1 = 2;
   int32 ip_2 = 3;

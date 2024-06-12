@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message SubscribeRoomCmd {
+message SubscribeRoomCommand {
   int32 room_number = 1;
   int32 x = 2;
   int32 y = 3;

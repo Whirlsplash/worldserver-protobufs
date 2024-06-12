@@ -2,6 +2,6 @@ syntax = "proto3";
 
 package whirl;
 
-message ChannelCmd {
+message ChannelCommand {
   string channel = 1;
 }

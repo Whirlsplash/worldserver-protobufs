@@ -4,7 +4,7 @@ package whirl;
 
 import "PropertyList.proto";
 
-message FingerReplyCmd {
+message FingerReplyCommand {
   string user = 1;
   PropertyList property_list = 2;
 }

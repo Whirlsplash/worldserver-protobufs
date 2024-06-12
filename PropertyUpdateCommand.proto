@@ -4,6 +4,6 @@ package whirl;
 
 import "PropertyList.proto";
 
-message PropertyUpdateCmd {
+message PropertyUpdateCommand {
   PropertyList property_list = 1;
 }

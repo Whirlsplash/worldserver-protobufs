@@ -4,7 +4,7 @@ package whirl;
 
 import "ObjID.proto";
 
-message TextCmd {
+message TextCommand {
   ObjID sender_id = 1;
   string text = 2;
 }

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message BuddyListNotifyCmd {
+message BuddyListNotifyCommand {
   string buddy_name = 1;
   int32 logged_on = 2;
 }

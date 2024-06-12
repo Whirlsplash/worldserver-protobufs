@@ -4,6 +4,6 @@ package whirl;
 
 import "NetworkProperty.proto";
 
-message AppInitCmd {
+message AppInitCommand {
   repeated NetworkProperty property_list = 2;
 }
