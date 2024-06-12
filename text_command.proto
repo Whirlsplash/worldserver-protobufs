@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-import "ObjID.proto";
+import "obj_id.proto";
 
 message TextCommand {
   ObjID sender_id = 1;

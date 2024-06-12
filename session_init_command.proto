@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-import "OldPropertyList.proto";
+import "old_property_list.proto";
 
 message SessionInitCommand {
   OldPropertyList property_list = 1;

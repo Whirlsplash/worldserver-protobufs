@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-import "PropertyList.proto";
+import "property_list.proto";
 
 message PropertySetCommand {
   string from_user = 1;
