@@ -4,7 +4,7 @@ package whirl;
 
 import "commands/appear_actor_command.proto";
 import "commands/app_init_command.proto";
-import "commands/prop_command.proto";
+import "commands/property_command.proto";
 import "commands/buddy_list_notify_command.proto";
 import "commands/buddy_list_update_command.proto";
 import "commands/channel_command.proto";
@@ -14,7 +14,7 @@ import "commands/finger_request_command.proto";
 import "commands/long_location_command.proto";
 import "commands/property_set_command.proto";
 import "commands/property_update_command.proto";
-import "commands/prop_request_command.proto";
+import "commands/property_request_command.proto";
 import "commands/redirect_command.proto";
 import "commands/redirect_id_command.proto";
 import "commands/room_id_command.proto";
@@ -39,7 +39,7 @@ message NetworkPacket {
   oneof command {
     AppearActorCommand appear_actor_command = 5;
     AppInitCommand app_init_command = 6;
-    PropCommand prop_command = 7;
+    PropertyCommand property_command = 7;
     BuddyListNotifyCommand buddy_list_notify_command = 8;
     BuddyListUpdateCommand buddy_list_update_command = 9;
     ChannelCommand channel_command = 10;
@@ -49,7 +49,7 @@ message NetworkPacket {
     LongLocationCommand long_location_command = 14;
     PropertySetCommand property_set_command = 15;
     PropertyUpdateCommand property_update_command = 16;
-    PropRequestCommand prop_request_command = 17;
+    PropertyRequestCommand property_request_command = 17;
     RedirectCommand redirect_command = 18;
     RedirectIDCommand redirect_id_command = 19;
     RoomIDCommand room_id_command = 20;

@@ -46,7 +46,7 @@ def parse_network_packet(raw_bytes):
         case command.BUDDYLISTNOTIFYCMD:
             print("This is a BuddyListNotifyCommand.")
         case command.PROPREQCMD:
-            print("This is a PropRequestCommand.")
+            print("This is a PropertyRequestCommand.")
         case _:
             print(f"This is an unknown command type: {command_type}.")
 

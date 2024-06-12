@@ -4,6 +4,6 @@ package whirl;
 
 import "old_property_list.proto";
 
-message PropCommand {
+message PropertyCommand {
   OldPropertyList property_list = 1;
 }
