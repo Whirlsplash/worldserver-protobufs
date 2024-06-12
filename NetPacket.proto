@@ -35,8 +35,8 @@ message NetPacket {
     uint32 short_object_id = 2;
     string long_object_id = 3;
   }
-  uint32 command_type = 4;
-  oneof packet {
+  uint32 type = 4;
+  oneof command {
     AppearActorCmd appear_actor_cmd = 5;
     AppInitCmd app_init_cmd = 6;
     PropCmd prop_cmd = 7;
