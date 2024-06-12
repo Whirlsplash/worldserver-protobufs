@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message NetCmds {
-  repeated string receivable_net_packet = 1;
+message NetworkCommands {
+  repeated string receivable_network_packet = 1;
   map<int32, string> property_list = 2;
 }

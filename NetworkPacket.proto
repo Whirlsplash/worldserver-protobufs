@@ -29,7 +29,7 @@ import "TextCmd.proto";
 import "UnsubscribeRoomCmd.proto";
 import "WhisperCmd.proto";
 
-message NetPacket {
+message NetworkPacket {
   uint32 length = 1;
   oneof object_id {
     uint32 short_object_id = 2;

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message NetProperty {
+message NetworkProperty {
   int32 property_id = 1;
   string value = 2;
 }

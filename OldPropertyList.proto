@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package whirl;
 
-import "NetProperty.proto";
+import "NetworkProperty.proto";
 
 message OldPropertyList {
-  repeated NetProperty properties = 1;
+  repeated NetworkProperty properties = 1;
 }

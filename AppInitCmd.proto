@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package whirl;
 
-import "NetProperty.proto";
+import "NetworkProperty.proto";
 
 message AppInitCmd {
-  repeated NetProperty property_list = 2;
+  repeated NetworkProperty property_list = 2;
 }
