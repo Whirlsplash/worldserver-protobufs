@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
-message ObjID {
+message ObjectID {
   int32 short_object_id = 1;
   string long_object_id = 2;
 }

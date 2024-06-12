@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package whirl;
 
-import "obj_id.proto";
+import "object_id.proto";
 
 message TextCommand {
-  ObjID sender_id = 1;
+  ObjectID sender_id = 1;
   string text = 2;
 }
