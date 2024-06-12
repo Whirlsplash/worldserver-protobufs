@@ -22,7 +22,7 @@ import "RoomIDRequestCmd.proto";
 import "SessionExitCmd.proto";
 import "SessionInitCmd.proto";
 import "ShortLocationCmd.proto";
-import "SubscribeDistCmd.proto";
+import "SubscribeDistanceCmd.proto";
 import "SubscribeRoomCmd.proto";
 import "TeleportCmd.proto";
 import "TextCmd.proto";
@@ -57,7 +57,7 @@ message NetPacket {
     SessionExitCmd session_exit_cmd = 22;
     SessionInitCmd session_init_cmd = 23;
     ShortLocationCmd short_location_cmd = 24;
-    SubscribeDistCmd subscribe_dist_cmd = 25;
+    SubscribeDistanceCmd subscribe_distance_cmd = 25;
     SubscribeRoomCmd subscribe_room_cmd = 26;
     TeleportCmd teleport_cmd = 27;
     TextCmd text_cmd = 28;
