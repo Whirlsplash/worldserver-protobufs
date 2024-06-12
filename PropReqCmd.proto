@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package whirl;
+
+message PropReqCmd {
+  repeated int32 variable_ids = 1;
+}

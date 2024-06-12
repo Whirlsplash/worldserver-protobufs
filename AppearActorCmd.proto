@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package whirl;
+
+message AppearActorCmd {
+  int32 room_id = 1;
+  int32 x = 2;
+  int32 y = 3;
+  int32 z = 4;
+  int32 direction = 5;
+}

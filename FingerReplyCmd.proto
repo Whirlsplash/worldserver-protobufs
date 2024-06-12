@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package whirl;
+
+import "PropertyList.proto";
+
+message FingerReplyCmd {
+  string user = 1;
+  PropertyList property_list = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package whirl;
+
+import "NetProperty.proto";
+
+message AppInitCmd {
+  repeated NetProperty property_list = 2;
+}

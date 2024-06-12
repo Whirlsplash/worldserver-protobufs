@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package whirl;
+
+message NetData {
+  bytes data = 1;
+  int32 packet_size = 2;
+  int32 offset = 3;
+}

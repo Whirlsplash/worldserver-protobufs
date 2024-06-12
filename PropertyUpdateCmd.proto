@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package whirl;
+
+import "PropertyList.proto";
+
+message PropertyUpdateCmd {
+  PropertyList property_list = 1;
+}

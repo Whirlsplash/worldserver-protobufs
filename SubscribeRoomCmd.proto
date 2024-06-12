@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package whirl;
+
+message SubscribeRoomCmd {
+  int32 room_number = 1;
+  int32 x = 2;
+  int32 y = 3;
+  int32 z = 4;
+  int32 distance = 5;
+}

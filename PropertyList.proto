@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package whirl;
+
+import "Net2Property.proto";
+
+message PropertyList {
+  repeated Net2Property properties = 1;
+}

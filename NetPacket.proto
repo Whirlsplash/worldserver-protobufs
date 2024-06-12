@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package whirl;
+
+import "AppearActorCmd.proto";
+import "AppInitCmd.proto";
+import "PropCmd.proto";
+import "BuddyListNotifyCmd.proto";
+import "BuddyListUpdateCmd.proto";
+import "ChannelCmd.proto";
+import "DisappearActorCmd.proto";
+import "FingerReplyCmd.proto";
+import "FingerReqCmd.proto";
+import "LongLocCmd.proto";
+import "PropertySetCmd.proto";
+import "PropertyUpdateCmd.proto";
+import "PropReqCmd.proto";
+import "RedirectCmd.proto";
+import "RedirectIDCmd.proto";
+import "RoomIDCmd.proto";
+import "RoomIDReqCmd.proto";
+import "SessionExitCmd.proto";
+import "SessionInitCmd.proto";
+import "ShortLocCmd.proto";
+import "SubscribeDistCmd.proto";
+import "SubscribeRoomCmd.proto";
+import "TeleportCmd.proto";
+import "TextCmd.proto";
+import "UnsubscribeRoomCmd.proto";
+import "WhisperCmd.proto";
+
+message NetPacket {
+  uint32 length = 1;
+  oneof object_id {
+    uint32 short_object_id = 2;
+    string long_object_id = 3;
+  }
+  uint32 command_type = 4;
+  oneof packet {
+    AppearActorCmd appear_actor_cmd = 5;
+    AppInitCmd app_init_cmd = 6;
+    PropCmd prop_cmd = 7;
+    BuddyListNotifyCmd buddy_list_notify_cmd = 8;
+    BuddyListUpdateCmd buddy_list_update_cmd = 9;
+    ChannelCmd channel_cmd = 10;
+    DisappearActorCmd disappear_actor_cmd = 11;
+    FingerReplyCmd finger_reply_cmd = 12;
+    FingerReqCmd finger_req_cmd = 13;
+    LongLocCmd long_loc_cmd = 14;
+    PropertySetCmd property_set_cmd = 15;
+    PropertyUpdateCmd property_update_cmd = 16;
+    PropReqCmd prop_req_cmd = 17;
+    RedirectCmd redirect_cmd = 18;
+    RedirectIDCmd redirect_id_cmd = 19;
+    RoomIDCmd room_id_cmd = 20;
+    RoomIDReqCmd room_id_req_cmd = 21;
+    SessionExitCmd session_exit_cmd = 22;
+    SessionInitCmd session_init_cmd = 23;
+    ShortLocCmd short_loc_cmd = 24;
+    SubscribeDistCmd subscribe_dist_cmd = 25;
+    SubscribeRoomCmd subscribe_room_cmd = 26;
+    TeleportCmd teleport_cmd = 27;
+    TextCmd text_cmd = 28;
+    UnsubscribeRoomCmd unsubscribe_room_cmd = 29;
+    WhisperCmd whisper_cmd = 30;
+  }
+}

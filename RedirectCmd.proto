@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package whirl;
+
+message RedirectCmd {
+  int32 room_number = 1;
+  int32 ip_1 = 2;
+  int32 ip_2 = 3;
+  int32 ip_3 = 4;
+  int32 ip_4 = 5;
+  int32 port = 6;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package whirl;
+
+import "ObjID.proto";
+
+message WhisperCmd {
+  ObjID sender_id = 1;
+  string text = 2;
+  ObjID receiver_id = 3;
+}

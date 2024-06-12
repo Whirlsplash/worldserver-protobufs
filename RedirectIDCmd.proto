@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package whirl;
+
+message RedirectIDCmd {
+  string room_name = 1;
+  int32 room_number = 2;
+  int32 ip_1 = 3;
+  int32 ip_2 = 4;
+  int32 ip_3 = 5;
+  int32 ip_4 = 6;
+  int32 port = 7;
+}

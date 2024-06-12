@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package whirl;
+
+message Net2Property {
+  int32 prop_id = 1;
+  int32 flags = 2;
+  int32 access = 3;
+  oneof value {
+    string string_value = 4;
+    bytes binary_value = 5;
+  }
+}

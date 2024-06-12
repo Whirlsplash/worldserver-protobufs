@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package whirl;
+
+import "PropertyList.proto";
+
+message PropertySetCmd {
+  string from_user = 1;
+  PropertyList property_list = 2;
+}

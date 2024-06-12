@@ -1,0 +1,10 @@
+# Tup
+.tup
+
+# Editor
+.vscode
+
+# Build Artifacts
+__pycache__
+*.py
+!test.py

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package whirl;
+
+message NetProperty {
+  int32 property_id = 1;
+  string value = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package whirl;
+
+import "OldPropertyList.proto";
+
+message SessionExitCmd {
+  OldPropertyList property_list = 1;
+}
