@@ -3,7 +3,7 @@ syntax = "proto3";
 package whirl;
 
 message ShortLocationCommand {
-  int32 dx = 1;
-  int32 dy = 2;
-  int32 ddirection = 3;
+  int32 delta_x = 1;
+  int32 delta_y = 2;
+  int32 delta_direction = 3;
 }
