@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package whirl;
 
+import "object_id.proto";
 import "commands/appear_actor_command.proto";
 import "commands/app_init_command.proto";
 import "commands/property_command.proto";
@@ -31,37 +32,34 @@ import "commands/whisper_command.proto";
 
 message NetworkPacket {
   uint32 length = 1;
-  oneof object_id {
-    uint32 short_object_id = 2;
-    string long_object_id = 3;
-  }
-  uint32 type = 4;
+  ObjectID object_id = 2;
+  uint32 type = 3;
   oneof command {
-    AppearActorCommand appear_actor_command = 5;
-    AppInitCommand app_init_command = 6;
-    PropertyCommand property_command = 7;
-    BuddyListNotifyCommand buddy_list_notify_command = 8;
-    BuddyListUpdateCommand buddy_list_update_command = 9;
-    ChannelCommand channel_command = 10;
-    DisappearActorCommand disappear_actor_command = 11;
-    FingerReplyCommand finger_reply_command = 12;
-    FingerRequestCommand finger_request_command = 13;
-    LongLocationCommand long_location_command = 14;
-    PropertySetCommand property_set_command = 15;
-    PropertyUpdateCommand property_update_command = 16;
-    PropertyRequestCommand property_request_command = 17;
-    RedirectCommand redirect_command = 18;
-    RedirectIDCommand redirect_id_command = 19;
-    RoomIDCommand room_id_command = 20;
-    RoomIDRequestCommand room_id_request_command = 21;
-    SessionExitCommand session_exit_command = 22;
-    SessionInitCommand session_init_command = 23;
-    ShortLocationCommand short_location_command = 24;
-    SubscribeDistanceCommand subscribe_distance_command = 25;
-    SubscribeRoomCommand subscribe_room_command = 26;
-    TeleportCommand teleport_command = 27;
-    TextCommand text_command = 28;
-    UnsubscribeRoomCommand unsubscribe_room_command = 29;
-    WhisperCommand whisper_command = 30;
+    AppearActorCommand appear_actor_command = 4;
+    AppInitCommand app_init_command = 5;
+    PropertyCommand property_command = 6;
+    BuddyListNotifyCommand buddy_list_notify_command = 7;
+    BuddyListUpdateCommand buddy_list_update_command = 8;
+    ChannelCommand channel_command = 9;
+    DisappearActorCommand disappear_actor_command = 10;
+    FingerReplyCommand finger_reply_command = 11;
+    FingerRequestCommand finger_request_command = 12;
+    LongLocationCommand long_location_command = 13;
+    PropertySetCommand property_set_command = 14;
+    PropertyUpdateCommand property_update_command = 15;
+    PropertyRequestCommand property_request_command = 16;
+    RedirectCommand redirect_command = 17;
+    RedirectIDCommand redirect_id_command = 18;
+    RoomIDCommand room_id_command = 19;
+    RoomIDRequestCommand room_id_request_command = 20;
+    SessionExitCommand session_exit_command = 21;
+    SessionInitCommand session_init_command = 22;
+    ShortLocationCommand short_location_command = 23;
+    SubscribeDistanceCommand subscribe_distance_command = 24;
+    SubscribeRoomCommand subscribe_room_command = 25;
+    TeleportCommand teleport_command = 26;
+    TextCommand text_command = 27;
+    UnsubscribeRoomCommand unsubscribe_room_command = 28;
+    WhisperCommand whisper_command = 29;
   }
 }
